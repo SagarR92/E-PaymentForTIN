@@ -32,10 +32,10 @@ public class TDSTCS {
 		Select AssessmentYear = new Select(
 		driver.findElement(By.xpath("//*[@id=\"div_assessment_error\"]/div/select")));
 		AssessmentYear.selectByIndex(1);
-		driver.findElement(By.xpath("//*[@id=\"div_add_line1_error\"]/div/input")).sendKeys("AE-920");
-		driver.findElement(By.xpath("//*[@id=\"div_add_line2_error\"]/div/input")).sendKeys("Housing Board Colony");
-		driver.findElement(By.xpath("//*[@id=\"div_add_line3_error\"]/div/input")).sendKeys("AB Road");
-		driver.findElement(By.xpath("//*[@id=\"div_add_line4_error\"]/div/input")).sendKeys("Pithampur");
+		driver.findElement(By.name("Add_Line1")).sendKeys("AE-920");
+		driver.findElement(By.name("Add_Line2")).sendKeys("Housing Board Colony");
+		driver.findElement(By.name("Add_Line3")).sendKeys("AB Road");
+		driver.findElement(By.name("Add_Line4")).sendKeys("Pithampur");
 		driver.findElement(By.xpath("//*[@id=\"div_add_line5_error\"]/div/input")).sendKeys("Dhar");
 		Select State = new Select(driver.findElement(By.xpath("//*[@id=\"div_state_error\"]/div/select")));
 		State.selectByIndex(10);
